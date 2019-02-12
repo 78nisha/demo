@@ -1,0 +1,62 @@
+page-health{
+
+	.health-title{
+		padding: 0 13px;
+		font-size: 16px;
+	}
+
+	.health-brief h2{
+		line-height: 30px;
+	}
+
+	.health-brief h2 span{
+		float: right;
+	}
+
+	.segmentWrapper{
+		background: #fff;
+	}
+
+	.vaccinationLog h1{
+		text-align: center;
+		background: #e24090;
+		border-radius: 50%;
+		height: 39px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #fff;
+	}
+
+	.vaccinationLog h2{
+		font-size: 13px;
+		font-weight: 500;
+		margin-bottom: 5px;
+		color: #6d6d6d;
+	}
+
+	.vaccinationLog h2 span{
+		float: right;
+	    color: #b1b1b1;
+	}
+
+	.vaccinationLog p{
+		margin-bottom: 10px;
+		font-size: 16px;
+		color: #333;
+		font-weight: 500;
+	}
+
+	.hospitalization-duration h3{
+		display: inline-block;
+		color: #6d6d6d;
+	}
+
+	.hospitalization-duration h3:first-child{
+		margin-right: 20px;
+	}
+
+	.record{
+		text-align: center;
+	}
+}

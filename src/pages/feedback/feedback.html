@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>FEEDBACk</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <div class="login-wrapper">
+  <form>
+    <ion-list>
+    <ion-item>
+    <ion-label>From</ion-label>
+    <ion-input type="email" id="emailInput" name="emailInput" [value]="this.emailData" #emailInput disabled>
+    </ion-input>
+    </ion-item>
+    <ion-item>
+    <ion-label>To</ion-label>
+    <ion-input type="email" id="P_EmailInput" name="P_EmailInput" [value]="this.p_emailData" #P_EmailInput disabled></ion-input>
+    </ion-item>
+     <ion-item>
+    <ion-label stacked>Message</ion-label>
+    <ion-input type="text" id="feedbackInput" name="feedbackInput" #feedbackInput required> </ion-input>
+    </ion-item>
+    </ion-list>
+    <br>
+    <br>
+  </form>
+  <button ion-button (click)="feedbackButton(feedbackInput.value)"> Send </button> 
+</div>
+</ion-content>

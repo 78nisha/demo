@@ -1,0 +1,24 @@
+<ion-content padding>
+  <ion-card class="login_card">
+    <div class="logo">
+      <img src="../../assets/imgs/shristiLogo.png" alt="">
+</div>
+      <div class="login-wrapper">
+        <form [formGroup]="myForm">
+          <ion-list>
+            <ion-item>
+              <ion-label floating>USERNAME</ion-label>
+              <ion-input type="text" formControlName="nameInput" [(ngModel)]="nameInput" name="nameInput" required> </ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label floating>PASSWORD</ion-label>
+              <ion-input type="password" formControlName="passwordInput" [(ngModel)]="passwordInput" name="passwordInput" required> </ion-input>
+            </ion-item>
+          </ion-list>
+          <br>
+          <br>
+        </form>
+        <button ion-button [disabled]="!myForm.valid" (click)="loginButton(nameInput,passwordInput)"> LOGIN </button>
+      </div>
+  </ion-card>
+</ion-content>

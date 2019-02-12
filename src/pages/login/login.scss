@@ -1,0 +1,25 @@
+page-login{
+	.login_card{
+		border-radius: 10px;
+		padding: 5px;
+	}
+	.logo{
+		width: 150px;
+	    margin: 10px auto;
+	    top: 20px;
+	    vertical-align: middle;
+	}
+	.login-wrapper{
+		padding: 10px;
+	}
+	.scroll-content{
+		display: flex;
+		justify-content: center;
+    	align-items: center;
+	}
+	.alertCustomCss{
+		font-size: 8px;
+		text-align: center;
+		background-color: #808080;
+	}
+}

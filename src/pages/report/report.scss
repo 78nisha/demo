@@ -1,0 +1,130 @@
+page-report {
+	.ecaReportButton{
+		font-size: 12px;
+	}
+
+	.subjectMarks{
+		border-radius: 10px;
+	}
+
+	.subjectMarks h2{
+		clear: both;
+	}
+
+	.subjectMarks h2 span{
+		float: right;
+	}
+
+	.subjectMarks .detailMarks h2{
+		margin-bottom: 10px;
+		font-weight: 400;
+		font-size: 16px;
+	}
+
+	.subjectMarks .card-header{
+		background-color: #b3b3b3;
+	}
+
+	.subjectMarks .card-header h2{
+		color: #fff;
+	}
+
+	.detailMarks{
+		padding: 13px!important;
+	}
+
+	.detailMarks span{
+		font-weight: 500;
+	}
+
+	.detailMarks h2:last-child{
+		font-weight: 700;
+	}
+
+	.ecaButton{
+		padding: 0 13px;
+	}
+
+	.button-full.button-outline {
+	   border: 1px solid;
+	}
+	.heading{
+		padding: 20px;
+	}
+	.heading span{
+		font-weight: 500;
+		float: right;
+	}
+	.caret{
+		display: none;
+	}
+	.content{
+		padding: 8px;
+	}
+	.contentDiv{
+		margin-top: 20px;
+		border: 1px solid #b3b3b3;
+		border-radius: 15px;
+	}
+
+	.contentDiv h2:last-child{
+		color: #df4890;
+	}
+	
+	.content span{
+		float: right;
+		font-weight: 500;
+	}
+	.title{
+		font-weight: 500;
+		font-size: 16px;
+		padding: 10px;
+		margin: 8px;
+	}
+
+	.item-inner{
+		background: transparent;
+		border:none;
+	}
+
+	.item-inner .heading{
+		background: #fff;
+	    border: 1px solid #b3b3b3;
+	    border-radius: 3px;
+	    margin: 0;
+	    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.27);
+}
+
+	.item-inner .label{
+		background: transparent;
+	}
+
+	.contentDiv {
+	    margin-top: 20px;
+	    border-top: none;
+	    border-radius: 0;
+	    width: 95%;
+	    margin: 0 auto;
+	    background: red;
+	    background: #ffffff;
+	    border-bottom-left-radius: 10px;
+	    border-bottom-right-radius: 10px;
+	}
+
+	.cardsBackground{
+		background: transparent;
+	}
+
+	.cardsBackground .item-inner{
+		border-bottom: none!important;
+	}
+	
+	.label-md{
+		margin-bottom: 10px;
+		margin-top: 0;
+	}
+
+	
+
+
+}

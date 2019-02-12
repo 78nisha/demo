@@ -1,0 +1,88 @@
+
+page-fees{
+    .title,
+    .subTitle{
+        padding: 0 13px;
+    }
+    .title{
+        font-size: 18px;
+        font-weight: 300;
+    }
+    .subTitle{
+        font-size: 14px;
+        font-weight: 500;
+        color: #e24090;
+        padding: 0 20px;
+    }
+    .column{
+        text-align: center;
+        height: 100px;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        color: #e24090;
+    }
+    .firstRow{
+        padding: 0 13px;
+    }
+    .firstRow .column:first-child{
+        border-right: 1px solid #cecece;
+        border-bottom: 1px solid #cecece;
+    }
+    .firstRow .column:nth-child(2){
+        border-bottom: 1px solid #cecece;
+    }
+    .firstRow .column:nth-child(3){
+        border-left: 1px solid #cecece;
+        border-bottom: 1px solid #cecece;
+    }
+    .firstRow .column:nth-child(4){
+        border-right: 1px solid #cecece;
+    }
+    .firstRow .column:nth-child(6){
+        border-left: 1px solid #cecece;
+    }
+    .firstRow .column:nth-child(7){
+        border-top: 1px solid #cecece;
+        border-right: 1px solid #cecece;
+    }
+    .firstRow .column:nth-child(8){
+        border-top: 1px solid #cecece;
+    }
+    .firstRow .column:nth-child(9){
+        border-top: 1px solid #cecece;
+        border-left: 1px solid #cecece;
+    }
+    .firstRow .column:nth-child(10){
+        border-top: 1px solid #cecece;
+        border-right: 1px solid #cecece;
+    }
+    .firstRow .column:nth-child(11){
+        border-top: 1px solid #cecece;
+    }
+    .firstRow .column:nth-child(12){
+        border-top: 1px solid #cecece;
+        border-left: 1px solid #cecece;
+    }
+    .record{
+        text-align: center;
+    }
+     .monthlyInvoice h2{
+        clear: both;
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+    .monthlyInvoice h2:last-child{
+        clear: both;
+        margin-bottom: 10px;
+    }
+    .monthlyInvoice h2 span{
+        float: right;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .due{
+        color: #e24090;
+        font-weight: 700;
+    }
+}

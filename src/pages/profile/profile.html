@@ -1,0 +1,86 @@
+<ion-header>
+  <ion-navbar color="primary">
+   <!--  <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button> -->
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content *ngFor='let profile of this.profileData' style="margin-top:56px;">
+  <ion-card class="main-card">
+    <ion-card-header>
+      <div class="studentImage">
+        <img src="../../assets/imgs/picture.jpg" alt="">
+      </div>
+      <div class="studentHeader">
+        <div class="name">
+          <h1>{{profile.firstName}} <span>{{profile.lastName}} </span></h1>
+        </div>
+        <div class="date">
+          <p>{{profile.studentID}}</p>
+        </div>
+        <div class="address">
+          <p>{{profile.address}}</p>
+          <p>{{profile.emailAddress}}</p>
+        </div>
+      </div>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row class="brief">
+          <ion-col col-6>
+            <div class="brief-block">
+              <h2>{{profile.levelTitle}} ({{profile.section}})</h2>
+              <p>Level</p>
+            </div>
+          </ion-col>
+          <ion-col col-6>
+            <div class="brief-block">
+              <h2>{{profile.enrolledYear}}</h2>
+              <p>Enrolled Year</p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <div class="profile-information">
+    <h1 class="title">Student's Information</h1>
+    <ion-card>
+      <ion-card-content>
+        <h2>Date of Birth <span>{{profile.dateOfBirth}}</span></h2>
+      </ion-card-content>
+    </ion-card>
+
+    <h1 class="title">Emergency Contact Information</h1>
+    <ion-card class="profile-inner-box">
+      <ion-card-content>
+        <h2>Contact Person <span>{{profile.contactPersonNameEmergency}}</span></h2>
+        <h2>Phone Number <span>{{profile.contactNumberEmergency}}</span></h2>
+      </ion-card-content>
+    </ion-card>
+
+    <h1 class="title">Father's Information</h1>
+    <ion-card class="profile-inner-box">
+      <ion-card-content>
+        <h2>Name <span>{{profile.fatherName}}</span></h2>
+        <h2>Occupation <span>{{profile.fatherOccupation}}</span></h2>
+        <h2>Contact <span>{{profile.contact1}}</span></h2>
+      </ion-card-content>
+    </ion-card>
+
+    <h1 class="title">Mother's Information</h1>
+    <ion-card class="profile-inner-box">
+      <ion-card-content>
+        <h2>Name <span>{{profile.motherName}}</span></h2>
+        <h2>Occupation <span>{{profile.motherOccupation}}</span></h2>
+        <h2>Contact <span>{{profile.contact2}}</span></h2>
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+
+
+</ion-content>

@@ -1,0 +1,89 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <!--  <ion-title>Menu</ion-title> -->
+      <ion-title>
+        <div class="imageHeader">
+          <img src="../../assets/imgs/shristiLogo.png" alt="">
+      </div>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <!-- <ion-list>
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+    </ion-list>
+    <ion-list>
+       <button menuClose ion-item (click)="logout()">
+         <p>Logout</p>
+      </button>
+   
+    </ion-list> -->
+    <ion-list>
+      <button ion-item menuClose (click)="openPage(homePage)">
+        <ion-row>
+          <ion-col col-2>
+            <ion-icon name="home"></ion-icon>
+          </ion-col>
+          <ion-col col-10>
+            DASHBOARD
+          </ion-col>
+        </ion-row>
+      </button>
+      <button ion-item menuClose (click)="openPage(academicsPage)">
+        <ion-row>
+          <ion-col col-2>
+            <ion-icon name="create"></ion-icon>
+          </ion-col>
+          <ion-col col-10>
+            ACADEMICS
+          </ion-col>
+        </ion-row>
+      </button>
+      <button ion-item menuClose (click)="openPage(reportPage)">
+        <ion-row>
+          <ion-col col-2>
+            <ion-icon name="ribbon"></ion-icon>
+          </ion-col>
+          <ion-col col-10>
+            REPORT CARD
+          </ion-col>
+        </ion-row>
+      </button>
+      <button ion-item menuClose (click)="openPage(healthPage)">
+        <ion-row>
+          <ion-col col-2>
+            <ion-icon name="medkit"></ion-icon>
+          </ion-col>
+          <ion-col col-10>
+            HEALTH
+          </ion-col>
+        </ion-row>
+      </button>
+      <button ion-item menuClose (click)="openPage(feesPage)">
+        <ion-row>
+          <ion-col col-2>
+            <ion-icon name="paper"></ion-icon>
+          </ion-col>
+          <ion-col col-10>
+            FEE/ACCOUNTS
+          </ion-col>
+        </ion-row>
+      </button>
+      <button class="logout" ion-item menuClose (click)="logout()">
+        <ion-row>
+          <ion-col col-2>
+            <ion-icon name="log-out"></ion-icon>
+          </ion-col>
+          <ion-col col-10>
+            LOGOUT
+          </ion-col>
+        </ion-row>
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

@@ -1,0 +1,106 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Academics</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <div class="segmentWrapper">
+    <ion-segment [(ngModel)]="academicsLog">
+      <ion-segment-button value="progress">
+        Progress
+      </ion-segment-button>
+      <ion-segment-button value="summary">
+        Summary
+      </ion-segment-button>
+      <ion-segment-button value="achievements">
+        Achievements
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+  <div [ngSwitch]="academicsLog">
+    <ion-list *ngSwitchCase="'progress'">
+      <ion-row class="mb-20">
+        <ion-col>
+          <ion-item>
+            <ion-select multiple="false" interface="popover" name="year" id="year" #year (ionChange)="onChangeYear(year.value)">
+              <ion-option disabled selected> Select Year </ion-option>
+              <ion-option value="2075">2075</ion-option>
+              <ion-option value="2076">2076</ion-option>
+              <ion-option value="2077">2077</ion-option>
+              <ion-option value="2078">2078</ion-option>
+              <ion-option value="2079">2079</ion-option>
+              <ion-option value="2080">2080</ion-option>
+              <ion-option value="2081">2081</ion-option>
+              <ion-option value="2082">2082</ion-option>
+              <ion-option value="2083">2083</ion-option>
+              <ion-option value="2084">2084</ion-option>
+              <ion-option value="2085">2085</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <div>
+        <chart style=" height: 320px" [type]="type1" [data]="data1" [options]="options1"></chart>
+      </div>
+    </ion-list>
+    <ion-list *ngSwitchCase="'summary'">
+      <ion-row class="mb-20">
+      <ion-col>
+        <ion-item>
+          <ion-select multiple="false" interface="popover" name="yearValue" id="yearValue" #yearValue (ionChange)="onChangeYearSummary(yearValue.value)">
+            <ion-option disabled selected> Select Year </ion-option>
+            <ion-option value="2075">2075</ion-option>
+            <ion-option value="2076">2076</ion-option>
+            <ion-option value="2077">2077</ion-option>
+            <ion-option value="2078">2078</ion-option>
+            <ion-option value="2079">2079</ion-option>
+            <ion-option value="2080">2080</ion-option>
+            <ion-option value="2081">2081</ion-option>
+            <ion-option value="2082">2082</ion-option>
+            <ion-option value="2083">2083</ion-option>
+            <ion-option value="2084">2084</ion-option>
+            <ion-option value="2085">2085</ion-option>
+          </ion-select>
+        </ion-item>
+        </ion-col>
+      </ion-row>
+      <div>
+        <chart style=" height: 320px" [type]="type2" [data]="data2" [options]="options2"></chart>
+      </div>
+    </ion-list>
+    <ion-list *ngSwitchCase="'achievements'">
+      <ion-item>
+        <ion-select multiple="false" interface="popover" name="type" id="type" #type (ionChange)="onChange(type.value)">
+          <ion-option disabled selected> Select Type </ion-option>
+          <ion-option value="internal">Internal</ion-option>
+          <ion-option value="external">External</ion-option>
+        </ion-select>
+      </ion-item>
+    
+      <div *ngIf="this.internal.length!= 0">
+        <ion-card *ngFor='let detail of this.internal'>
+          <ion-card-content class="achievement_info">
+            <h1 class="title" *ngIf='detail.title != ""'> {{detail.title}} </h1>
+            <h1 class="title" *ngIf='detail.title == ""'> - </h1>
+            <p class="achievementDesc" *ngIf='detail.description != ""'> {{detail.description}} </p>
+            <p class="achievementDesc" *ngIf='detail.description == ""'> - </p>
+          </ion-card-content>
+        </ion-card>
+      </div>
+
+      <div *ngIf="this.external.length!= 0">
+        <ion-card *ngFor='let detail of this.external'>
+          <ion-card-content class="achievement_info">
+            <h1 class="title" *ngIf='detail.title != ""'> {{detail.title}} </h1>
+            <h1 class="title" *ngIf='detail.title == ""'> - </h1>
+            <p class="achievementDesc" *ngIf='detail.description != ""'> {{detail.description}} </p>
+            <p class="achievementDesc" *ngIf='detail.description == ""'> - </p>
+          </ion-card-content>
+        </ion-card>   
+    </div>
+    </ion-list>
+  </div>
+</ion-content>

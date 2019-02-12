@@ -1,0 +1,23 @@
+page-ecaSecond{
+	.title{
+		padding: 0 13px;
+		font-size: 16px;
+		color: #e24090;
+	}
+	.ecaGrade h2{
+		clear: both;
+		margin-bottom: 10px;
+		font-size: 16px;
+	}
+
+	.ecaGrade h2:last-child{
+		clear: both;
+		margin-bottom: 10px;
+	}
+
+	.ecaGrade h2 span{
+		float: right;
+		font-weight: 400;
+		font-size: 18px;
+	}
+}
